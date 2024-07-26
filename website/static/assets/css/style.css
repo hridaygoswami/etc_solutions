@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Project: Bridely
--------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Glacial Indifference:400,500,600,700,800,900');
+
 /*------------------------------------------------------------------
 [Table of contents]
 1. Body
@@ -22,7 +19,7 @@ Project: Bridely
 */
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Glacial Indifference';
 }
 
 :root {
@@ -2746,7 +2743,7 @@ a {
 
 /* Animation properties */
 .star {
-  animation: star 10s ease-out infinite;
+  animation: star 4.5s ease-out infinite;
 }
 
 /* Keyframes */
@@ -2770,8 +2767,6 @@ a {
     transform: translateZ(-1000em);
   }
 }
-
-
 /* partners-section */
 
 .partners-section h6 {
@@ -4623,7 +4618,7 @@ a {
 
 
 p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Glacial Indifference', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -4642,7 +4637,7 @@ p{
 .modal-btn + label,
 .modal-btn:not(:checked) + label{
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Glacial Indifference', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 2;

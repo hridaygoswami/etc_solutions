@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -6,34 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | ETC Solutions</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/etcsolutions.jpeg">
-    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/images/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="manifest" href="{% static 'assets/images/favicons/manifest.json' %}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{% static 'assets/images/favicons/ms-icon-144x144.png' %}">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/mobile.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
         integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 
@@ -61,7 +62,7 @@
             <div class="main-header">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <img src="/667462c456f4a8000f668e3e.png" alt="" class="img-fluid diverge-logo">
+                        <img src="{% static '667462c456f4a8000f668e3e.png' %}" alt="" class="img-fluid diverge-logo">
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -73,24 +74,24 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color home-margin-top"
-                                        href="index.html">Home</a>
+                                        href="{% url 'Index' %}">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="about.html">About</a>
+                                        href="{% url 'About' %}">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="services.html">Services</a>
+                                        href="{% url 'Services' %}">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="gallery.html">Gallery</a>
+                                        href="{% url 'Gallery' %}">Gallery</a>
                                 </li>
                                 <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                                        href="{% url 'Contact' %}">Contact <span class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                             
@@ -102,10 +103,10 @@
         <!-- BANNER-SECTION -->
         <div class="home-banner-section overflow-hidden position-relative sub-baner">
             <figure class="banner-img1 mb-0">
-                <img src="./assets/images/banner-img1.png" alt="" class="star">
+                <img src="{% static 'assets/images/banner-img1.png' %}" alt="" class="star">
             </figure>
             <figure class="banner-img2 mb-0">
-                <img src="./assets/images/banner-img2.png" alt="" class="star">
+                <img src="{% static 'assets/images/banner-img2.png' %}" alt="" class="star">
             </figure>
             <div class="banner-container-box contact-banner">
                 <div class="container">
@@ -132,28 +133,28 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="send_message_form_box_content">
                    <figure class="contact-form-img">
-                       <img src="./index_images/contact/contact2.png"  style="border-top-right-radius: 50px;" alt="" class="img-fluid">
+                       <img src="{% static 'index_images/contact/contact2.png' %}"  style="border-top-right-radius: 50px;" alt="" class="img-fluid">
                    </figure>
-                    <form id="contactpage" method="POST" action="./contact-form.php" class="contactpage-form">
+                    <form id="contactpage" class="contactpage-form">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group mb-0">    
-                                <input type="text" class="form_style" placeholder="Name" name="name"> 
+                                <input type="text" id="name" class="form_style" placeholder="Name" name="name"> 
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group mb-0">
-                                <input type="email" class="form_style" placeholder="Email" name="email">
+                                <input type="email" id="email" class="form_style" placeholder="Email" name="email">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group mb-0">    
-                                <input type="tel" class="form_style" placeholder="Phone" name="phone"> 
+                                <input type="tel" id="tel" class="form_style" placeholder="Phone" name="phone"> 
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group mb-0">    
-                                <input type="text" class="form_style choose-services" placeholder="Name Services:">
+                                <input type="text" id="services" class="form_style choose-services" placeholder="Name Services:">
                                 <!-- <i class="fa-solid fa-chevron-right"></i> -->
                                 </div>
                             </div>
@@ -161,22 +162,41 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class=" form-group mb-0">    
-                                <textarea class="form_style" placeholder="Message" rows="3" name="comments"></textarea>
+                                <textarea id="t_area" class="form_style" placeholder="Message" rows="3" name="comments"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="form_button_wrapper text-center">
-                            <button type="submit" class="appointment-btn">Order Services</button>
+                            <button onclick="whatsappRedirect()" type="button" class="appointment-btn">Order Services</button>
                         </div>
                     </form>
                 </div>
             </div>
+
+            <script>
+                function whatsappRedirect() {
+                    let name = document.getElementById("name").value
+                    let email = document.getElementById("email").value
+                    let tel = document.getElementById("tel").value
+                    let services = document.getElementById("services").value
+                    let t_area = document.getElementById("t_area").value
+                    console.log(name, email, tel, services, t_area)
+
+                    const phoneNumber = '+919898451593'; // Replace with the target WhatsApp number
+                    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\nPhone: ${tel}\nServices: ${services}\nMessage: ${t_area}`
+            )}`;
+                    // Open WhatsApp URL
+                    window.open(whatsappURL, '_blank');
+                }
+            </script>
+
             <div class="col-lg-1 col-md-1 col-sm-1 d-xl-block d-none"></div>
             <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                 <div class="about-content-img aos-init aos-animate" data-aos="fade-up">
                     
                     <h2>Interested in  discussing? Get In touch with us.</h2>
-                     <p>Lorem ipsum dolor sit amet consect etur adipisci ngelitsed do eiu smo d tempor incididunt ut labo re etdo lore magna aliqua quisfipolo</p>
+                     <!-- <p>Lorem ipsum dolor sit amet consect etur adipisci ngelitsed do eiu smo d tempor incididunt ut labo re etdo lore magna aliqua quisfipolo</p> -->
                      <h6>Follow us:</h6>
                      <ul class="list-unstyled footer-social-icons">
                         <li class="list-item">
@@ -193,7 +213,7 @@
 <!-- contact-details-section -->
 <section class="contact-details-section-outer">
     <figure class="design-img mb-0">
-        <img src="./assets/images/categories-img6.png" alt="" class="">
+        <img src="{% static 'assets/images/categories-img6.png' %}" alt="" class="">
     </figure>
     <div class="container">
         <div class="row">
@@ -215,7 +235,7 @@
                     <div class="carts">
                         <ul class="list-unstyled">
                             <li class="first">
-                                <figure class="mb-0 d-inline-block"><img src="./assets/images/contact-detail-img1.png" alt=""></figure>
+                                <figure class="mb-0 d-inline-block"><img src="{% static 'assets/images/contact-detail-img1.png' %}" alt=""></figure>
                                 <div class="carts_wrapper">
                                     <span class="rating counter">Phone:</span>
                                    <a href="tel:+91 98984 51593" class="text-decoration-none profession phone-number">+91 98984 51593</a>      
@@ -223,14 +243,14 @@
                                 </div>
                             </li>
                             <li class="second">
-                                <figure class="mb-0 d-inline-block"><img src="./assets/images/contact-detail-img2.png" alt=""></figure>
+                                <figure class="mb-0 d-inline-block"><img src="{% static 'assets/images/contact-detail-img2.png' %}" alt=""></figure>
                                 <div class="carts_wrapper">
                                     <span class="rating counter">Address:</span>
                                     <span class="profession">1237, Solaris Business Hub, Naranpura, Ahmedabad-380013</span>
                                 </div>
                             </li>
                             <li class="third">
-                                <figure class="mb-0 d-inline-block"><img src="./assets/images/contact-detail-img3.png" alt=""></figure>
+                                <figure class="mb-0 d-inline-block"><img src="{% static 'assets/images/contact-detail-img3.png' %}" alt=""></figure>
                                 <div class="carts_wrapper">
                                     <span class="rating counter">Email:</span>
                                     <a href="mailto:support@bridely.com" class="text-decoration-none profession">naitikmishra1232@gmail.com</a>
@@ -260,7 +280,7 @@
         
         <div class="footer-msg floating-chat">
             <figure class="mb-0 footer-chat-img">
-                <img src="./assets/images/footer-chat-img.png" alt="">
+                <img src="{% static 'assets/images/footer-chat-img.png' %}" alt="">
             </figure>
         </div>
         <div class="container">
@@ -268,14 +288,14 @@
                 <div class="row">
                     <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
                     <div class="col-lg-5 col-md-6 col-sm-12">
-                        <h3 class="planning-h3">Let’s Start Planning!</h3>
+                        <h3 class="planning-h3">Let’s Start Planning<span id="etc_heading">!</span></h3>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="banner-btn discover-btn-banner">
-                            <a href="about.html" class="text-decoration-none"><i class="fa fa-clipboard-list"></i>Make Reservations</a>
+                            <a href="{% url 'About' %}" class="text-decoration-none"><i class="fa fa-clipboard-list"></i>Make Reservations</a>
                         </div>
                         <div class="learn-btn">
-                            <a href="about.html" class="text-decoration-none">Learn more</a>
+                            <a href="{% url 'About' %}" class="text-decoration-none">Learn more</a>
                         </div>
                     </div>
                     <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
@@ -286,7 +306,7 @@
         <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
             <div class="footer-right-box">
                
-                    <figure class="footer-logo"><img src="/667462c456f4a8000f668e3e.png" alt="" class="img-fluid"></figure>
+                    <figure class="footer-logo"><img src="{% static '667462c456f4a8000f668e3e.png' %}" alt="" class="img-fluid"></figure>
                 </a>
                     <p class="footer-section-text">Eventful Moments | Creating Unforgettable Experiences</p>
                         <ul class="list-unstyled footer-social-icons">
@@ -329,19 +349,19 @@
     </div>   
  </div>
     <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
+    <script src="{% static 'assets/js/animations.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/text-animations.js"></script>
-    <script src="assets/js/carousel.js"></script>
+    <script src="{% static 'assets/js/text-animations.js' %}"></script>
+    <script src="{% static 'assets/js/carousel.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://unpkg.com/ityped@0.0.10"></script>
-    <script src="./assets/js/type.js"></script>
-    <script src="assets/js/custom-script.js"></script>
-    <script src="./assets/js/video-popup.js"></script>
+    <script src="{% static 'assets/js/type.js' %}"></script>
+    <script src="{% static 'assets/js/custom-script.js' %}"></script>
+    <script src="{% static 'assets/js/video-popup.js' %}"></script>
 </body>
 
 </html>

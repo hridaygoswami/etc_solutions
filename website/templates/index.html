@@ -22,8 +22,8 @@
 
     <!-- updated the icon pack -->
     <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
-    <link rel="icon" type="image/png" sizes="192x192" href="new_assets/icons/enhanced_logo_2-removebg-preview.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="new_assets/icons/enhanced_logo_2-removebg-preview.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
 
     
     <link rel="manifest" href="{% static 'assets/images/favicons/manifest.json' %}">
@@ -87,24 +87,24 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
                                     <a class="nav-link text-decoration-none navbar-text-color home-margin-top"
-                                        href="index.html">Home<span class="sr-only">(current)</span></a>
+                                        href="{% url 'Index' %}">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="about.html">About</a>
+                                        href="{% url 'About' %}">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="services.html">Services</a>
+                                        href="{% url 'Services' %}">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="gallery.html">Gallery</a>
+                                        href="{% url 'Gallery' %}">Gallery</a>
                                 </li>
                                 <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="contact.html">Contact</a>
+                                        href="{% url 'Contact' %}">Contact</a>
                                 </li>
                             </ul>
                             
@@ -162,7 +162,7 @@
                             <h2>What We do, We do With Passion</h2>
                             <p class="aboutus-p">Welcome to ETC Events, where we specialize in transforming your visions into extraordinary events. </p>
                             <div class="banner-btn discover-btn-banner">
-                                <a href="about.html" class="text-decoration-none">learn more</a>
+                                <a href="{% url 'About' %}" class="text-decoration-none">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -233,14 +233,14 @@
             </div>
 
             <div class="banner-btn discover-btn-banner">
-                <a href="gallery.html" class="text-decoration-none">Learn More</a>
+                <a href="{% url 'Gallery' %}" class="text-decoration-none">Learn More</a>
             </div>
         </div>
     </div>
     <!-- Event-Togrther-Section -->
     <section class="event-section overflow-hidden position-relative">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 order-lg-2 order-2">
                     <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
                         <div class="cate-icon-outer">
@@ -250,17 +250,16 @@
                         </div>
                         <h2>Let’s Plan Your Next Event Together
                         </h2>
-                        <p class="aboutus-p">Lorem ipsum dolor sit amet
-                            consectetur adipiscing elit sed doeiusm tempor incididunt.</p>
+                        <p class="aboutus-p"></p>
                         <div class="banner-btn discover-btn-banner">
-                            <a href="services.html" class="text-decoration-none">Learn more</a>
+                            <a href="{% url 'Services' %}" class="text-decoration-none">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 order-lg-1 order-1">
-                    <div class="event-content-img aos-init aos-animate">
+                <!-- <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 order-lg-1 order-1">
+                    <div class="event-content-img aos-init aos-animate"> -->
                         <!-- <iframe src="{% static 'dist/index.html" class="mb-0 service_slider" frameborder="0"></iframe> -->
-                        <iframe src="{% static '/dist/index.html' %}" style="width: 100%; height: 500px; border: none; border-radius: 30px; border: 5px solid #99ccc9;"></iframe>
+                        <!-- <iframe src="{% url 'Index Services' %}" style="width: 100%; height: 500px; border: none; border-radius: 30px; border: 5px solid #99ccc9;"></iframe> -->
                         <!-- <ul class="list-unstyled mb-0">
                             <li>
                                 <figure class="mb-0 icons-fig">
@@ -337,8 +336,8 @@
                                 </h6>
                             </li>
                         </ul> -->
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -361,47 +360,34 @@
                 <ul class="list-unstyled mb-0">
                     <li>
                         <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon1.png' %}" alt="">
+                            <img src="{% static './assets/images/logos/1.png' %}"  style="border-top-left-radius: 54px; border-bottom-left-radius: 54px;" alt="">
                         </figure>
                     </li>
                     <li>
                         <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon2.png' %}" alt="">
+                            <img src="{% static './assets/images/logos/5.png' %}" alt="">
                         </figure>
                     </li>
                     <li>
                         <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon3.png' %}" alt="">
+                            <img src="{% static './assets/images/logos/3.png' %}" alt="">
                         </figure>
                     </li>
                     <li>
                         <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon4.png' %}" alt="">
+                            <img src="{% static './assets/images/logos/4.png' %}"  style="border-top-right-radius: 54px; border-bottom-right-radius: 54px;" alt="">
                         </figure>
                     </li>
                 </ul>
-                <ul class="list-unstyled second mb-0">
+                <!-- <ul class="list-unstyled second mb-0">
+                   <li></li>
+                   <li></li>
                     <li>
                         <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon5.png' %}" alt="">
+                            <img src="{% static './assets/images/logos/5.png' %}" alt="">
                         </figure>
                     </li>
-                    <li>
-                        <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon6.png' %}" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon7.png' %}" alt="">
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="mb-0 icons-fig">
-                            <img src="{% static './assets/images/icon8.png' %}" alt="">
-                        </figure>
-                    </li>
-                </ul>
+                </ul> -->
                </div>
             </div>
            </div>
@@ -411,12 +397,19 @@
 <!-- Instagram-feed-section -->
 <section class="insta-feed-section">
     <figure class="mb-0 insta-feed-img">
-        <img src="{% static './assets/images/footer-background-img.jpg' %}" alt="" class="img-fluid star">
-        <!-- <img src="{% static '/index_images/index_image_1.png' %}" alt="" class="img-fluid star"> -->
-        <!-- <img src="{% static '/index_images/index_image_4.png' %}" alt="" class="img-fluid star">
-        <img src="{% static '/index_images/index_image_2.png' %}" alt="" class="img-fluid star">
-        <img src="{% static '/index_images/index_image_3.png' %}" alt="" class="img-fluid star"> -->
+        <img src="{% static './assets/images/Final testimonial/1.png' %}" id="testimonial" alt="" class="img-fluid star">
     </figure>
+    <script>
+        let counter = 2
+        setInterval(()=>{
+            document.getElementById("testimonial").src = `http://localhost:8000/static/assets/images/Final%20testimonial/${counter}.png`
+            console.log( document.getElementById("testimonial").src)
+            counter++
+            if(counter == 4) {
+                counter = 1
+            }
+        }, 5000)
+    </script>
   <div class="container">
       <div class="row">
           <div class="col-lg-12">
@@ -430,7 +423,7 @@
       <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-6">
             <figure class="mb-0 insta-section-imgs">
-                <img src="{% static './assets/images/insta-section-img1.png' %}" alt="" class="img-fluid">
+                <img src="{% static './assets/images/instagram/insta 1.jpg' %}" style="border: 3px solid white;" alt="" class="img-fluid">
                 <div class="hover_box_plus">
                     <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                 </div>
@@ -438,7 +431,7 @@
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6">
             <figure class="mb-0 insta-section-imgs">
-                <img src="{% static './assets/images/insta-section-img2.png' %}" alt="" class="img-fluid">
+                <img src="{% static './assets/images/instagram/insta 2.jpg' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                 <div class="hover_box_plus">
                     <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                 </div>
@@ -446,7 +439,7 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6">
             <figure class="mb-0 insta-section-imgs insta-section-imgs-mb">
-                <img src="{% static './assets/images/insta-section-img3.png' %}" alt="" class="img-fluid">
+                <img src="{% static './assets/images/instagram/insta 3.jpg' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                 <div class="hover_box_plus">
                     <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                 </div>
@@ -454,7 +447,7 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6">
             <figure class="mb-0 insta-section-imgs insta-section-imgs-mb">
-                <img src="{% static './assets/images/insta-section-img4.png' %}" alt="" class="img-fluid">
+                <img src="{% static './assets/images/instagram/insta 4.jpg' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                 <div class="hover_box_plus">
                     <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                 </div>
@@ -477,14 +470,14 @@
                 <div class="row">
                     <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
                     <div class="col-lg-5 col-md-6 col-sm-12">
-                        <h3 class="planning-h3">Let’s Start Planning!</h3>
+                        <h3 class="planning-h3">Let<span id="etc_heading">'</span>s Start Planning<span id="etc_heading">!</span></h3>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="banner-btn discover-btn-banner">
-                            <a href="about.html" class="text-decoration-none"><i class="fa fa-clipboard-list"></i>Make Reservations</a>
+                            <a href="{% url 'Contact' %}" class="text-decoration-none"><i class="fa fa-clipboard-list"></i>Make Reservations</a>
                         </div>
                         <div class="learn-btn">
-                            <a href="about.html" class="text-decoration-none">Learn more</a>
+                            <a href="{% url 'Contact' %}" class="text-decoration-none">Learn more</a>
                         </div>
                     </div>
                     <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
@@ -494,7 +487,7 @@
     <div class="row">
         <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
             <div class="footer-right-box">
-                <a href="index.html" class="text-decoration-none">
+                <a href="{% url 'Index' %}" class="text-decoration-none">
                     <figure class="footer-logo"><img src="{% static '/667462c456f4a8000f668e3e.png' %}" alt="" class="img-fluid"></figure>
                 </a>
                     <p class="footer-section-text">Eventful Moments | Creating Unforgettable Experiences</p>
@@ -535,7 +528,7 @@
     </div>
     </div>   
  </div>
-    <script src="{% static 'https://code.jquery.com/jquery-1.12.1.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
     <script src="{% static 'assets/js/animations.js' %}"></script>
     <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
@@ -546,9 +539,9 @@
     <script src="{% static 'assets/js/carousel.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://unpkg.com/ityped@0.0.10"></script>
-    <script src="{% static './assets/js/type.js' %}"></script>
+    <script src="{% static 'assets/js/type.js' %}"></script>
     <script src="{% static 'assets/js/custom-script.js' %}"></script>
-    <script src="{% static './assets/js/video-popup.js' %}"></script>
+    <script src="{% static 'assets/js/video-popup.js' %}"></script>
 </body>
 
 </html>

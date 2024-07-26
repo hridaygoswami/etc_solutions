@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -7,34 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | ETC Solutions</title>
     <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/etcsolutions.jpeg">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/etcsolutions.jpeg">
-    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/images/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/etcsolutions.jpeg' %}">
+    <link rel="manifest" href="{% static 'assets/images/favicons/manifest.json' %}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{% static 'assets/images/favicons/ms-icon-144x144.png' %}">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/mobile.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
         integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 
@@ -42,7 +43,7 @@
     <!-- HEADER-SECTION -->
     <div class="home-header-section sub-header-section">
         <!-- <figure class="banner-right-img left_icon img">
-            <img src="./assets/images/header-right-img.png" alt="" class="star">
+            <img src="{% static 'assets/images/header-right-img.png' %}" alt="" class="star">
         </figure> -->
         <div class="header-top header-top1">
             <div class="container">
@@ -71,7 +72,7 @@
             <div class="main-header">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <img src="/667462c456f4a8000f668e3e.png" alt="" class="img-fluid diverge-logo">
+                        <img src="{% static '667462c456f4a8000f668e3e.png' %}" alt="" class="img-fluid diverge-logo">
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -83,24 +84,24 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color home-margin-top"
-                                        href="index.html">Home<span class="sr-only">(current)</span></a>
+                                        href="{% url 'Index' %}">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="about.html">About</a>
+                                        href="{% url 'About' %}">About</a>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="services.html">Services</a>
+                                        href="{% url 'Services' %}">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="gallery.html">Gallery</a>
+                                        href="{% url 'Gallery' %}">Gallery</a>
                                 </li>
                                 <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
-                                        href="contact.html">Contact</a>
+                                        href="{% url 'Contact' %}">Contact</a>
                                 </li>
                             </ul>
                             
@@ -112,10 +113,10 @@
         <!-- BANNER-SECTION -->
         <div class="home-banner-section overflow-hidden position-relative sub-baner">
             <figure class="banner-img1 mb-0">
-                <img src="./assets/images/banner-img1.png" alt="" class="star">
+                <img src="{% static 'assets/images/banner-img1.png' %}" alt="" class="star">
             </figure>
             <figure class="banner-img2 mb-0">
-                <img src="./assets/images/banner-img2.png" alt="" class="star">
+                <img src="{% static 'assets/images/banner-img2.png' %}" alt="" class="star">
             </figure>
             <div class="banner-container-box">
                 <div class="container">
@@ -147,7 +148,7 @@
                         <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
                             <div class="cate-icon-outer">
                                 <figure class="cate-icon-img mb-0">
-                                    <img src="./assets/images/event-design-logo.png" alt="">
+                                    <img src="{% static 'assets/images/event-design-logo.png' %}" alt="">
                                 </figure>
                             </div>
                             <h2>Let’s Plan Your Next Event Together
@@ -165,7 +166,7 @@
                             <ul class="list-unstyled mb-0">
                                 <li>
                                     <figure class="mb-0 icons-fig">
-                                        <img src="./assets/images/wedding.jpg" alt="">
+                                        <img src="{% static 'assets/images/wedding.jpg' %}" alt="">
                                     </figure>
                                     <!-- <h6>Weddings</h6> -->
                                     <h6>
@@ -175,15 +176,15 @@
                                         </label>
                                         <div class="modal" id="modal-1">
                                             <div class="modal-wrap">
-                                                <img src="./assets/images/wedding.jpg" alt="">
-                                                <p>This is modal 1 content.</p>
+                                                <img src="{% static 'assets/images/wedding.jpg' %}" alt="">
+                                                <p>Transform your special day with our exquisite wedding decorations. From elegant floral arrangements and romantic lighting to chic table settings and personalized touches, we create a breathtaking atmosphere tailored to your unique vision. Let us help you celebrate love in style, making every moment unforgettable.</p>
                                             </div>
                                         </div>
                                     </h6>
                                 </li>
                                 <li>
                                     <figure class="mb-0 icons-fig">
-                                        <img src="./assets/images/corpo.jpeg" alt="">
+                                        <img src="{% static 'assets/images/corpo.jpeg' %}" alt="">
                                     </figure>
                                     <!-- <h6>Corporate Events</h6> -->
                                     <h6>
@@ -193,8 +194,8 @@
                                         </label>
                                         <div class="modal" id="modal-2">
                                             <div class="modal-wrap">
-                                                <img src="./assets/images/corpo.jpeg" alt="">
-                                                <p>This is modal 2 content.</p>
+                                                <img src="{% static 'assets/images/corpo.jpeg' %}" alt="">
+                                                <p>Elevate your corporate events with our sophisticated decorations. Whether it’s a conference, gala, or product launch, we provide stylish decor solutions that reflect your brand’s identity. From modern centerpieces and sleek furnishings to customized backdrops and lighting, we ensure a polished and professional atmosphere that impresses your guests and leaves a lasting impression.</p>
                                             </div>
                                         </div>
                                     </h6>
@@ -203,7 +204,7 @@
                             <ul class="list-unstyled second mb-0">
                                 <li>
                                     <figure class="mb-0 icons-fig">
-                                        <img src="./assets/images/navratri1.png" alt="">
+                                        <img src="{% static 'assets/images/navratri1.png' %}" alt="">
                                     </figure>
                                     <!-- <h6>Festive Celebrations</h6> -->
                                     <h6>
@@ -213,15 +214,15 @@
                                             </label>
                                         <div class="modal" id="modal-3">
                                             <div class="modal-wrap">
-                                                <img src="./assets/images/navratri1.png" alt="">
-                                                <p>This is modal 3 content.</p>
+                                                <img src="{% static 'assets/images/navratri1.png' %}" alt="">
+                                                <p>Celebrate the spirit of festivities with our vibrant decorations. Whether it's Navratri, Diwali, or any other special occasion, we bring your celebrations to life with colorful and culturally rich decor. From traditional adornments and intricate rangoli designs to dazzling lights and festive centerpieces, we create an enchanting ambiance that honors the essence of your festivities.</p>
                                             </div>
                                         </div>
                                     </h6>
                                 </li>
                                 <li>
                                     <figure class="mb-0 icons-fig">
-                                        <img src="./assets/images/birthday.jpg" alt="">
+                                        <img src="{% static 'assets/images/birthday.jpg' %}" alt="">
                                     </figure>
                                     <!-- <h6>Other Events</h6> -->
                                     <h6>
@@ -231,8 +232,8 @@
                                         </label>
                                         <div class="modal" id="modal-4">
                                             <div class="modal-wrap">
-                                                <img src="./assets/images/birthday.jpg" alt="">
-                                                <p>This is modal 4 content.</p>
+                                                <img src="{% static 'assets/images/birthday.jpg' %}" alt="">
+                                                <p>Make your special occasions unforgettable with our delightful decorations. From birthday parties and baby showers to anniversaries and more, we provide creative and personalized decor that adds charm and joy to your celebrations. With themed decorations, colorful balloons, elegant table settings, and unique accents, we ensure a festive atmosphere that delights your guests and makes every moment memorable.</p>
                                             </div>
                                         </div>
                                     </h6>
@@ -255,12 +256,12 @@
                     <h2>ETC Events Presentation</h2>
                     <div class="video-section-conten" data-aos="fade-up">
                         <figure class="mb-0 video-section-image">
-                            <img src="./assets/images/video-img.png" alt="" class="fluid-img">
+                            <img src="{% static 'assets/video/thumbnail.png' %}" style="border-top-left-radius: 54px; border-bottom-right-radius: 54px; border: 5px solid #99ccc9;"  alt="" class="fluid-img">
                         </figure>
                         <a class="popup-vimeo"
-                            href="https://previews.customer.envatousercontent.com/h264-video-previews/5afc8770-eb05-42ec-b854-9fb6b3bb52c5/40068661.mp4">
+                            href="{% static 'assets/video/etc video.mp4' %}">
                             <figure class="mb-0 vide-play-img">
-                                <img src="./assets/images/video-play-icon.png" alt="" class="fluid-img">
+                                <img src="{% static 'assets/images/video-play-icon.png' %}" alt="" class="fluid-img">
                             </figure>
                         </a>
                     </div>
@@ -275,7 +276,7 @@
 
             <div class="footer-msg floating-chat">
                 <figure class="mb-0 footer-chat-img">
-                    <img src="./assets/images/footer-chat-img.png" alt="">
+                    <img src="{% static 'assets/images/footer-chat-img.png' %}" alt="">
                 </figure>
             </div>
             <div class="container">
@@ -283,15 +284,15 @@
                     <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
                         <div class="col-lg-5 col-md-6 col-sm-12">
-                            <h3 class="planning-h3">Let’s Start Planning!</h3>
+                            <h3 class="planning-h3">Let’s Start Planning <span id="etc_heading">!</span></h3>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="banner-btn discover-btn-banner">
-                                <a href="about.html" class="text-decoration-none"><i
+                                <a href="{% url 'Contact' %}" class="text-decoration-none"><i
                                         class="fa fa-clipboard-list"></i>Make Reservations</a>
                             </div>
                             <div class="learn-btn">
-                                <a href="about.html" class="text-decoration-none">learn more</a>
+                                <a href="{% url 'Contact' %}" class="text-decoration-none">learn more</a>
                             </div>
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
@@ -301,7 +302,7 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
                         <div class="footer-right-box">
-                            <figure class="footer-logo"><img src="/667462c456f4a8000f668e3e.png" alt=""
+                            <figure class="footer-logo"><img src="{% static '667462c456f4a8000f668e3e.png' %}" alt=""
                                     class="img-fluid"></figure>
                             <p class="footer-section-text">Eventful Moments | Creating Unforgettable Experiences</p>
                             <ul class="list-unstyled footer-social-icons">
@@ -346,19 +347,19 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
+    <script src="{% static 'assets/js/animations.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/text-animations.js"></script>
-    <script src="assets/js/carousel.js"></script>
+    <script src="{% static 'assets/js/text-animations.js' %}"></script>
+    <script src="{% static 'assets/js/carousel.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://unpkg.com/ityped@0.0.10"></script>
-    <script src="./assets/js/type.js"></script>
-    <script src="assets/js/custom-script.js"></script>
-    <script src="./assets/js/video-popup.js"></script>
+    <script src="{% static 'assets/js/type.js' %}"></script>
+    <script src="{% static 'assets/js/custom-script.js' %}"></script>
+    <script src="{% static 'assets/js/video-popup.js' %}"></script>
 </body>
 
 </html>
