@@ -90,7 +90,6 @@
                                     <a class="nav-link text-decoration-none navbar-text-color"
                                         href="{% url 'Gallery' %}">Gallery</a>
                                 </li>
-                                <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none navbar-text-color"
                                         href="{% url 'Contact' %}">Contact</a>
@@ -115,7 +114,7 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-lg-2 order-1">
                             <div class="position-relative sub-banner-section" data-aos="fade-up" id="myContentDIV">
-                                <h1><span class="h1-text"> Gallery</span></h1>
+                                <h1><span class="h1-text"> Gallery <span id="etc_heading">|</span> Coming Soon</span></h1>
                                 <p class="banner-paragraph">
 
                                 </p>
@@ -152,6 +151,8 @@
                 </div>
                 {% endfor %} -->
 
+                <!-- django gallery code  -->
+<!-- 
                 {% for key, con in content.items %}
                 <h2>{{ key }}</h2><br>
                 {% for c in con %}
@@ -159,7 +160,7 @@
                 <div class="row" data-aos="fade-up">
                     {% endif %}
 
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 gallery">
                         <div
                             class="gallery_content{% if forloop.counter|divisibleby:3 %} gallery_content-mb gallery-bottom{% else %} gallery_content-mb{% endif %}">
                             <figure class="contact-form-img">
@@ -177,7 +178,7 @@
                 </div>
                 {% endif %}
                 {% endfor %}
-                {% endfor %}
+                {% endfor %} -->
 
 
                 <!-- <h2>Weddings</h2><br>

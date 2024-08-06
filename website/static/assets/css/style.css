@@ -2142,7 +2142,7 @@ a {
 }
 
 .insta-feed-section .insta-feed-img {
-  position: absolute;
+  transform: scale(0.8);
   bottom: 0;
 }
 

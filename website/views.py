@@ -21,11 +21,9 @@ def gallery(request):
         "content": content,
     })
 
-def gallery_more(request, id):
+def gallery_indi(request, id):
     # return HttpResponse(f"This is gallery ph id {id}")
-    return render("gallery_main.html", {
-        "id": id
-    })
+    return render(request, "gallery_indi.html")
 
 def services(request):
     return render(request, "services.html")

@@ -197,7 +197,7 @@
                         <div class="about-content-img">
 
                             <br><br><br>
-                            <figure class="mb-0 about-banner-img"><img src="{% static 'index_images/about_images/about.png' %}" style="border-top-right-radius: 50px; border-bottom-left-radius: 50px; border: 5px solid #99ccc9;" alt=""
+                            <figure class="mb-0 about-banner-img"><img src="{% static 'index_images/about_images/about_2.png' %}" style="border-top-right-radius: 50px; border-bottom-left-radius: 50px; border: 5px solid #99ccc9;" alt=""
                                     class="">
                             </figure>
                         </div>
@@ -374,23 +374,10 @@
 
     <!-- Instagram-feed-section -->
     <section class="insta-feed-section">
-        <figure class="mb-0 insta-feed-img">
-            <img src="{% static './assets/images/Final testimonial/1.png' %}" id="testimonial" alt="" class="img-fluid star">
-        </figure>
-        <script>
-            let counter = 2
-            setInterval(()=>{
-                document.getElementById("testimonial").src = `http://localhost:8000/static/assets/images/Final%20testimonial/${counter}.png`
-                counter++
-                if(counter == 4) {
-                    counter = 1
-                }
-            }, 5000)
-        </script>
+        
       <div class="container">
           <div class="row">
               <div class="col-lg-12">
-               
                 <figure class="insta-fig">
                     <img src="{% static './assets/images/insta-icon.png' %}" alt="">
                 </figure>
@@ -432,6 +419,20 @@
             </div>
           </div>
       </div>
+
+      <figure class="mb-0 insta-feed-img" style="margin-top: 30vh;">
+        <img src="{% static './assets/images/Final testimonial/1.png' %}" id="testimonial" alt="" class="img-fluid star">
+    </figure>
+    <script>
+        let counter = 2
+        setInterval(()=>{
+            document.getElementById("testimonial").src = `http://localhost:8000/static/assets/images/Final%20testimonial/${counter}.png`
+            counter++
+            if(counter == 4) {
+                counter = 1
+            }
+        }, 5000)
+    </script>
     </section>
 
     <div class="footer-section">

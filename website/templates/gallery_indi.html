@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery | ETC Solutions</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/core.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/base.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/custom.css' %}"
+    />
+    <link rel="icon" type="image/png" href="gallery_assets/favicon.png?v=2" />
+    <script src="{% static 'gallery_assets/js/assets/jquery.js' %}"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/images/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+
+  </head>
+  <body>
+    <div class="body-overlay"></div>
+    <!-- Menu-->
+    <div class="nav-container">
+      <ul class="nav">
+        <li><a href="{% url 'Index' %}">Home</a></li>
+        <li><a href="{% url 'About' %}">About</a></li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
+        <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+      </ul>
+      <div class="exit"></div>
+      <ul class="social">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+    </div>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid smooth-transition">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="gallery_assets/index.html" class="brand">
+            <img alt="" src="{% static '667462c456f4a8000f668e3e.png' %}" class="dark-brand" /><img
+              alt=""
+              src="{% static '667462c456f4a8000f668e3e.png' %}"
+              class="light-brand"
+          /></a>
+          <!-- Menu-->
+          <div class="menu"></div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumbs">
+                <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+                <li>Example portfolio item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container intro">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+              <h1 class="title">Example portfolio item</h1>
+              <p>
+                We love design, so much we breathe it. We make things for the
+                better. Our team is specialized in both visual design and
+                webdevelopment.
+              </p>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Event details</h4>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Year</div>
+                <div class="col-md-8">2016</div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Client</div>
+                <div class="col-md-8">John Doe Inc.</div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Event Type</div>
+                <div class="col-md-8">Art Direction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container content intro">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="{% static 'gallery_assets/images/08.jpg' %}" class="lightbox"
+                ><img alt="" src="{% static 'gallery_assets/images/08.jpg' %}" class="item"
+              /></a>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <p>
+                    Suspendisse rutrum tellus diam, id consequat nulla placerat
+                    sed. Donec vel ligula tortor. Duis non augue quam. Ut nec
+                    felis vestibulum, luctus ex a, semper enim. Curabitur at
+                    pretium nunc.
+                  </p>
+                </div>
+              </div>
+              <a href="{% static 'gallery_assets/images/03.jpg' %}" class="lightbox"
+                ><img alt="" src="{% static 'gallery_assets/images/03.jpg' %}" class="lightbox"="item"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="{% static 'gallery_assets/images/05.jpg' %}" class="lightbox"
+                ><img alt="" src="{% static 'gallery_assets/images/05.jpg' %}" class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static 'gallery_assets/images/06.jpg' %}" class="lightbox"
+                ><img alt="" src="{% static 'gallery_assets/images/06.jpg' %}" class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static 'gallery_assets/images/07.jpg' %}" class="lightbox"
+                ><img alt="" src="{% static 'gallery_assets/images/07.jpg' %}" class="item"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="on-foot">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="gallery_assetspages/portfolio-single-2.html" class="previous-post">
+                <div class="arrow">
+                  <div class="ion-chevron-left"></div>
+                </div>
+                <div class="content">
+                  <div class="title">Previous</div>
+                  <div class="post-title">Example portfolio item</div>
+                </div></a
+              >
+            </div>
+            <div class="col-md-6">
+              <a href="gallery_assets/pages/portfolio-single-2.html" class="next-post">
+                <div class="content">
+                  <div class="title">Next</div>
+                  <div class="post-title">Example portfolio item</div>
+                </div>
+                <div class="arrow">
+                  <div class="ion-chevron-right"></div></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer-->
+      <footer>
+        <div class="container content">
+          <div class="row">
+            <!-- Contact info-->
+            <div class="col-md-2">
+              <p>
+                P (+1) 0 123 456 78<br />F (+1) 0 123 456 78<br />M
+                email@example.com
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p>
+                Bone Agency Ltd<br />Designstreet 137<br />12345 NY, New York
+              </p>
+            </div>
+            <div class="col-md-8 text-right">
+              <!-- Social links-->
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="{% static 'gallery_assets/js/assets/bootstrap.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/validation.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery_assets/modules/tera-slider/tera-slider.js' %}"></script>
+    <script src="{% static 'gallery_assets/modules/tera-lightbox/tera-lightbox.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/animsition.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/functions.js' %}"></script>
+  </body>
+</html>
