@@ -2,6 +2,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Glacial Indifference:400,500,600,700,800,900');
 
+/* The Seasons Bold */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* The Seasons Bold Italic */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-bdit.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* The Seasons Italic */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-it.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* The Seasons Light */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-lt.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+/* The Seasons Light Italic */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-ltit.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: italic;
+}
+
+/* The Seasons Regular */
+@font-face {
+  font-family: 'TheSeasons';
+  src: url('../fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Glacial Indifference Bold */
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('../fonts/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Glacial Indifference Italic */
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('../fonts/GlacialIndifference-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Glacial Indifference Regular */
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('../fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Applying the fonts */
+body {
+  font-family: 'TheSeasons', 'GlacialIndifference', sans-serif;
+}
+
 /*------------------------------------------------------------------
 [Table of contents]
 1. Body
@@ -19,7 +96,7 @@
 */
 
 body {
-  font-family: 'Glacial Indifference';
+  font-family: "GlacialIndifference";
 }
 
 :root {
@@ -64,7 +141,7 @@ h4,
 h5,
 h6 {
   /* font-family: "Playfair Display", serif; */
-  font-family: 'FONTSPRING DEMO - The Seasons';
+  font-family: "TheSeasons";
   font-weight: bolder;
 }
 
@@ -4618,7 +4695,7 @@ a {
 
 
 p{
-  font-family: 'Glacial Indifference', sans-serif;
+  font-family: "GlacialIndifference", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -4637,7 +4714,7 @@ p{
 .modal-btn + label,
 .modal-btn:not(:checked) + label{
   position: relative;
-  font-family: 'Glacial Indifference', sans-serif;
+  font-family: "GlacialIndifference", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 2;
