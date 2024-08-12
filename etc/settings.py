@@ -30,10 +30,10 @@ ALLOWED_HOSTS = [
     "etcsolutions.in",
     "http://etcsolutions.in",
     "https://etcsolutions.in",
-    "13.51.195.78",
-    "http://13.51.195.78",
-    "ec2-13-51-195-78.eu-north-1.compute.amazonaws.com",
-    "http://ec2-13-51-195-78.eu-north-1.compute.amazonaws.com"
+    "16.170.228.203",
+    "http://16.170.228.203/",
+    "http://ec2-16-170-228-203.eu-north-1.compute.amazonaws.com/",
+    "ec2-16-170-228-203.eu-north-1.compute.amazonaws.com/"
 ]
 
 
