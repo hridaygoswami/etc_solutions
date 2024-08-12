@@ -29,10 +29,14 @@ def upload_to(instance, filename, folder):
     filename = f'{photo_count}{os.path.splitext(filename)[1]}'
     return f'photos/{main_content_id}/{folder}/{filename}'
 
+# Named function to be used for the upload_to argument
+def upload_original_image(instance, filename):
+    return upload_to(instance, filename, 'original')
+
 # Define a separate model for handling photos
 class Photo(models.Model):
     main_content = models.ForeignKey(MainContent, on_delete=models.CASCADE, related_name='photos')
-    image = models.ImageField(upload_to=lambda instance, filename: upload_to(instance, filename, 'original'))
+    image = models.ImageField(upload_to=upload_original_image)
 
     def __str__(self):
         return f"Photo for {self.main_content}"
