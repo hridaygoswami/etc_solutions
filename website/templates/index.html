@@ -538,12 +538,12 @@
   </div>
 
   <figure class="mb-0 insta-feed-img" style="margin-top: 30vh;">
-    <img src="{% static './assets/images/Final testimonial/1.png' %}" id="testimonial" alt="" class="img-fluid star">
+    <img src="https://etc-static-insta-feed.s3.eu-north-1.amazonaws.com/1.png" id="testimonial" alt="" class="img-fluid star">
 </figure>
 <script>
     let counter = 2
     setInterval(()=>{
-        document.getElementById("testimonial").src = `http://localhost:8000/static/assets/images/Final%20testimonial/${counter}.png`
+        document.getElementById("testimonial").src = `https://etc-static-insta-feed.s3.eu-north-1.amazonaws.com/${counter}.png`
         console.log( document.getElementById("testimonial").src)
         counter++
         if(counter == 6) {
