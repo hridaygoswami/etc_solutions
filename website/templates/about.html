@@ -371,11 +371,10 @@
         </div>
     </section> -->
     <!-- Event-Organizer-Section -->
-
-    <!-- Story-Section -->
-
+    
+    <!-- Achievements-feed-section -->
     <section class="insta-feed-section">
-
+    
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -421,11 +420,10 @@
             </div>
         </div>
       </section>
-
-
+    
     <!-- Instagram-feed-section -->
     <section class="insta-feed-section">
-        
+    
       <div class="container">
           <div class="row">
               <div class="col-lg-12">
@@ -438,7 +436,7 @@
           <div class="row">
               <div class="col-lg-3 col-md-3 col-sm-6">
                 <figure class="mb-0 insta-section-imgs">
-                    <img src="{% static './assets/images/instagram/Feed_Section/1.png' %}" style="border: 3px solid white;" alt="" class="img-fluid">
+                    <img src="{% static './assets/images/instagram/Insta1.png' %}" style="border: 3px solid white;" alt="" class="img-fluid">
                     <div class="hover_box_plus">
                         <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                     </div>
@@ -446,7 +444,7 @@
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6">
                 <figure class="mb-0 insta-section-imgs">
-                    <img src="{% static './assets/images/instagram/Feed_Section/2.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
+                    <img src="{% static './assets/images/instagram/Insta2.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                     <div class="hover_box_plus">
                         <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                     </div>
@@ -454,7 +452,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <figure class="mb-0 insta-section-imgs insta-section-imgs-mb">
-                    <img src="{% static './assets/images/instagram/Feed_Section/3.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
+                    <img src="{% static './assets/images/instagram/Insta3.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                     <div class="hover_box_plus">
                         <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                     </div>
@@ -462,7 +460,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <figure class="mb-0 insta-section-imgs insta-section-imgs-mb">
-                    <img src="{% static './assets/images/instagram/Feed_Section/4.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
+                    <img src="{% static './assets/images/instagram/Insta4.png' %}" style="border: 3px solid white;"  alt="" class="img-fluid">
                     <div class="hover_box_plus">
                         <a href="https://www.instagram.com/etcevents2021/" target="_blank"><i class="fa-brands fa-instagram"></i>ETCEvents</a>
                     </div>
@@ -470,19 +468,20 @@
             </div>
           </div>
       </div>
-
+    
       <figure class="mb-0 insta-feed-img" style="margin-top: 30vh;">
-        <img src="{% static './assets/images/Final testimonial/1.png' %}" id="testimonial" alt="" class="img-fluid star">
+        <img src="https://etc-static-insta-feed.s3.eu-north-1.amazonaws.com/1.png" id="testimonial" alt="" class="img-fluid star">
     </figure>
     <script>
         let counter = 2
         setInterval(()=>{
-            document.getElementById("testimonial").src = `http://localhost:8000/static/assets/images/Final%20testimonial/${counter}.png`
+            document.getElementById("testimonial").src = `https://etc-static-insta-feed.s3.eu-north-1.amazonaws.com/${counter}.png`
+            console.log( document.getElementById("testimonial").src)
             counter++
-            if(counter == 4) {
+            if(counter == 6) {
                 counter = 1
             }
-        }, 5000)
+        }, 4500)
     </script>
     </section>
 
