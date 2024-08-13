@@ -4956,8 +4956,14 @@ p {
   width: 15%;
 }
 /* counter-section  */
+.counter-section .counter-section-fig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .counter-section .counter-section-fig img {
-  width: 347px;
+
+  width: 380px;
 }
 .counter-section .counter-inner-box h5 {
   font-size: 20px;
