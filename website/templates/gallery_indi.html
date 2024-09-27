@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery | ETC Solutions</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/core.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/base.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'gallery_assets/css/custom.css' %}"
+    />
+    <link rel="icon" type="image/png" href="gallery_assets/favicon.png?v=2" />
+    <script src="{% static 'gallery_assets/js/assets/jquery.js' %}"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/images/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicons/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/favicons/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/favicons/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicons/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+
+  </head>
+  <body>
+    <div class="body-overlay"></div>
+    <!-- Menu-->
+    <div class="nav-container">
+      <ul class="nav">
+        <li><a href="{% url 'Index' %}">Home</a></li>
+        <li><a href="{% url 'About' %}">About</a></li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
+        <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+        <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+      </ul>
+      <div class="exit"></div>
+      <ul class="social">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+    </div>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid smooth-transition">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="{% url 'Index' %}" class="brand">
+            <img alt="" src="{% static '667462c456f4a8000f668e3e.png' %}" class="dark-brand" /><img
+              alt=""
+              src="{% static '667462c456f4a8000f668e3e.png' %}"
+              class="light-brand"
+          /></a>
+          <!-- Menu-->
+          <div class="menu"></div>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumbs">
+                <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+                <li>{{main_content.id}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container intro">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+              <h1 class="title">{{main_content.title}}</h1>
+              <p>
+                {{main_content.description}}
+              </p>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Event details</h4>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Year</div>
+                <div class="col-md-8">{{main_content.date}}</div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Client</div>
+                <div class="col-md-8">{{main_content.title}}</div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-8 strong">Event Type</div>
+                <div class="col-md-8">{{main_content.category}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container content intro">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="{% static '/' %}{{main_content.id}}/original/1.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/1.jpg" style="height: 867px; width: 1300px;" class="item"
+              /></a>
+              <a href="{% static '/' %}{{main_content.id}}/original/2.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/2.jpg" style="height: 867px; width: 1300px;" class="item"
+              /></a>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <p>
+                    {{main_content.description}}
+                  </p>
+                </div>
+              </div>
+              <a href="{% static '/' %}{{main_content.id}}/original/3.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/3.jpg" style="height: 867px; width: 1300px;" class="lightbox"="item"
+              /></a>
+              <a href="{% static '/' %}{{main_content.id}}/original/4.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/4.jpg" style="height: 867px; width: 1300px;" class="lightbox"="item"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/5.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/5.jpg" style="height: 267px; width: 400px;" class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/6.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/6.jpg" style="height: 267px; width: 400px;"  class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/7.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/7.jpg" style="height: 267px; width: 400px;"  class="item"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/8.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/8.jpg" style="height: 267px; width: 400px;"  class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/9.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/9.jpg" style="height: 267px; width: 400px;"  class="item"
+              /></a>
+            </div>
+            <div class="col-md-4">
+              <a href="{% static '/' %}{{main_content.id}}/original/10.jpg" class="lightbox"
+                ><img alt="" src="{% static '/' %}{{main_content.id}}/original/10.jpg" style="height: 267px; width: 400px;"  class="item"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer-->
+      <footer>
+        <div class="container content">
+          <div class="row">
+            <!-- Contact info-->
+            <div class="col-md-2">
+              <p>
+                P <a href="tel:+91 98984 51593" class="text-decoration-none footer-link-auto">+91
+                  98984 51593</a>
+              </p>
+            </div>
+            <div class="col-md-2">
+              <p>
+                <a href="mailto:etckaran@gmail.com"
+                                            class="text-decoration-none footer-link-auto">etckaran@gmail.com</a>
+              </p>
+            </div>
+            <div class="col-md-8 text-right">
+              <!-- Social links-->
+              <ul class="social">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="{% static 'gallery_assets/js/assets/bootstrap.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/validation.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery_assets/modules/tera-slider/tera-slider.js' %}"></script>
+    <script src="{% static 'gallery_assets/modules/tera-lightbox/tera-lightbox.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/assets/animsition.js' %}"></script>
+    <script src="{% static 'gallery_assets/js/functions.js' %}"></script>
+  </body>
+</html>

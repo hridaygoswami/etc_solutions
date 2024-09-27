@@ -1,0 +1,370 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ETC Solutions</title>
+    
+    <!-- icon sizes will be specified soon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'assets/images/favicons/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'assets/images/favicons/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/favicons/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/images/favicons/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/favicons/apple-icon-114x114.png' %}">
+
+
+    <!-- updated the icon pack -->
+    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static '667462c456f4a8000f668e3e.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '667462c456f4a8000f668e3e.png' %}">
+
+    
+    <link rel="manifest" href="{% static 'assets/images/favicons/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/mobile.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+</head>
+
+<body>
+    <!-- HEADER-SECTION -->
+    <div class="home-header-section sub-header-section">
+        <!-- <figure class="banner-right-img left_icon img">
+            <img src="{% static 'assets/images/header-right-img.png' %}" alt="" class="star">
+        </figure> -->
+        <div class="header-top header-top1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-md-block d-sm-none">
+                        <!-- <div class="header-left d-table-cell align-middle">
+                          <div class="phone-icon d-inline-block"><i class="fa-solid fa-phone-volume"></i></div><p class="free-consultation-text">For a free consultation:<a href="tel:+123456789" class="text-decoration-none">0800 123 45 67 890</a></p>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="header-right float-md-right float-none">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block">Follow us on:</li>
+                                <li class="d-inline-block user-li"><a
+                                        href="https://m.facebook.com/etcsolutions1?mibextid=LQQJ4d" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="d-inline-block user-li"><a href="https://www.instagram.com/etcevents2021/"
+                                        target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="main-header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <img src="{% static '667462c456f4a8000f668e3e.png' %}" alt="" class="img-fluid diverge-logo">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color home-margin-top"
+                                        href="{% url 'Index' %}">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color"
+                                        href="{% url 'About' %}">About</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link text-decoration-none navbar-text-color"
+                                        href="{% url 'Services' %}">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color"
+                                        href="{% url 'Gallery' %}">Gallery</a>
+                                </li>
+                                <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-decoration-none navbar-text-color"
+                                        href="{% url 'Contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- BANNER-SECTION -->
+        <div class="home-banner-section overflow-hidden position-relative sub-baner">
+            <figure class="banner-img1 mb-0">
+                <img src="{% static 'assets/images/banner-img1.png' %}" alt="" class="star">
+            </figure>
+            <figure class="banner-img2 mb-0">
+                <img src="{% static 'assets/images/banner-img2.png' %}" alt="" class="star">
+            </figure>
+            <div class="banner-container-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 order-lg-2 order-1">
+                            <div class="position-relative sub-banner-section" data-aos="fade-up" id="myContentDIV">
+                                <h1>Our<span class="h1-text"> Servies</span></h1>
+                                <p class="banner-paragraph">
+
+                                </p>
+                                <!-- <div class="banner-btn discover-btn-banner">
+                                    <a href="about.html" class="text-decoration-none"><i
+                                            class="fa fa-clipboard-list"></i>Make Reservations</a>
+                                </div> -->
+                                <div class="banner-btn discover-btn-banner">
+                                    <div class="btn-inner">Home -<span class="about-margin"> Services</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Event-Togrther-Section -->
+        <section class="event-section overflow-hidden position-relative event-section-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 order-lg-2 order-2">
+                        <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
+                            <div class="cate-icon-outer">
+                                <figure class="cate-icon-img mb-0">
+                                    <img src="{% static 'assets/images/event-design-logo.png' %}" alt="">
+                                </figure>
+                            </div>
+                            <h2>Let’s Plan Your Next Event Together
+                            </h2>
+                            <p class="aboutus-p aos-init aos-animate">At ETC Events, we bring your vision to life with
+                                our comprehensive event management services. Specializing in weddings, corporate events,
+                                and festive celebrations, we pride ourselves on creating unforgettable experiences
+                                tailored to your unique needs and desires.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12 order-lg-1 order-1">
+                        <div class="event-content-img aos-init aos-animate"><br><br><br>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <figure class="mb-0 icons-fig">
+                                        <img src="{% static 'assets/images/wedding.jpg' %}" alt="">
+                                    </figure>
+                                    <!-- <h6>Weddings</h6> -->
+                                    <h6>
+                                        <input class="modal-btn" type="checkbox" id="modal-btn-1" name="modal-btn-1" />
+                                        <label for="modal-btn-1">Weddings
+                                            <!-- <i class="uil uil-expand-arrows"></i> -->
+                                        </label>
+                                        <div class="modal" id="modal-1">
+                                            <div class="modal-wrap">
+                                                <img src="{% static 'assets/images/wedding.jpg' %}" alt="">
+                                                <p>Transform your special day with our exquisite wedding decorations. From elegant floral arrangements and romantic lighting to chic table settings and personalized touches, we create a breathtaking atmosphere tailored to your unique vision. Let us help you celebrate love in style, making every moment unforgettable.</p>
+                                            </div>
+                                        </div>
+                                    </h6>
+                                </li>
+                                <li>
+                                    <figure class="mb-0 icons-fig">
+                                        <img src="{% static 'assets/images/corpo.jpeg' %}" alt="">
+                                    </figure>
+                                    <!-- <h6>Corporate Events</h6> -->
+                                    <h6>
+                                        <input class="modal-btn" type="checkbox" id="modal-btn-2" name="modal-btn-2" />
+                                        <label for="modal-btn-2">Corporate Events
+                                            <!-- <i class="uil uil-expand-arrows"></i> -->
+                                        </label>
+                                        <div class="modal" id="modal-2">
+                                            <div class="modal-wrap">
+                                                <img src="{% static 'assets/images/corpo.jpeg' %}" alt="">
+                                                <p>Elevate your corporate events with our sophisticated decorations. Whether it’s a conference, gala, or product launch, we provide stylish decor solutions that reflect your brand’s identity. From modern centerpieces and sleek furnishings to customized backdrops and lighting, we ensure a polished and professional atmosphere that impresses your guests and leaves a lasting impression.</p>
+                                            </div>
+                                        </div>
+                                    </h6>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled second mb-0">
+                                <li>
+                                    <figure class="mb-0 icons-fig">
+                                        <img src="{% static 'assets/images/navratri1.png' %}" alt="">
+                                    </figure>
+                                    <!-- <h6>Festive Celebrations</h6> -->
+                                    <h6>
+                                        <input class="modal-btn" type="checkbox" id="modal-btn-3" name="modal-btn-3" />
+                                        <label for="modal-btn-3">Celebrations
+                                            <!-- <i class="uil uil-expand-arrows"></i> -->
+                                            </label>
+                                        <div class="modal" id="modal-3">
+                                            <div class="modal-wrap">
+                                                <img src="{% static 'assets/images/navratri1.png' %}" alt="">
+                                                <p>Celebrate the spirit of festivities with our vibrant decorations. Whether it's Navratri, Diwali, or any other special occasion, we bring your celebrations to life with colorful and culturally rich decor. From traditional adornments and intricate rangoli designs to dazzling lights and festive centerpieces, we create an enchanting ambiance that honors the essence of your festivities.</p>
+                                            </div>
+                                        </div>
+                                    </h6>
+                                </li>
+                                <li>
+                                    <figure class="mb-0 icons-fig">
+                                        <img src="{% static 'assets/images/birthday.jpg' %}" alt="">
+                                    </figure>
+                                    <!-- <h6>Other Events</h6> -->
+                                    <h6>
+                                        <input class="modal-btn" type="checkbox" id="modal-btn-4" name="modal-btn-4" />
+                                        <label for="modal-btn-4">Other Events
+                                            <!-- <i class="uil uil-expand-arrows"></i> -->
+                                        </label>
+                                        <div class="modal" id="modal-4">
+                                            <div class="modal-wrap">
+                                                <img src="{% static 'assets/images/birthday.jpg' %}" alt="">
+                                                <p>Make your special occasions unforgettable with our delightful decorations. From birthday parties and baby showers to anniversaries and more, we provide creative and personalized decor that adds charm and joy to your celebrations. With themed decorations, colorful balloons, elegant table settings, and unique accents, we ensure a festive atmosphere that delights your guests and makes every moment memorable.</p>
+                                            </div>
+                                        </div>
+                                    </h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Categories-SECTION -->
+
+    <!-- Video-SECTION -->
+    <section class="video-section  video-section-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="autorix-text"><span class="ityped">Introduction Video</span></h5>
+                    <h2>ETC Events Presentation</h2>
+                    <div class="video-section-conten" data-aos="fade-up">
+                        <figure class="mb-0 video-section-image">
+                            <img src="{% static 'assets/video/thumbnail.png' %}" style="border-top-left-radius: 54px; border-bottom-right-radius: 54px; border: 5px solid #99ccc9;"  alt="" class="fluid-img">
+                        </figure>
+                        <a class="popup-vimeo"
+                            href="https://etc-static-insta-feed.s3.eu-north-1.amazonaws.com/etc_final_final.mp4">
+                            <figure class="mb-0 vide-play-img">
+                                <img src="{% static 'assets/images/video-play-icon.png' %}" alt="" class="fluid-img">
+                            </figure>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-section">
+        <div class="footer-inner">
+
+            <div class="footer-msg floating-chat">
+                <figure class="mb-0 footer-chat-img">
+                    <img src="{% static 'assets/images/footer-chat-img.png' %}" alt="">
+                </figure>
+            </div>
+            <div class="container">
+                <div class="footer-content-box">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            <h3 class="planning-h3">Let’s Start Planning <span id="etc_heading">!</span></h3>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="banner-btn discover-btn-banner">
+                                <a href="{% url 'Contact' %}" class="text-decoration-none"><i
+                                        class="fa fa-clipboard-list"></i>Make Reservations</a>
+                            </div>
+                            <div class="learn-btn">
+                                <a href="{% url 'Contact' %}" class="text-decoration-none">learn more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 d-lg-block d-none"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-right-box">
+                            <figure class="footer-logo"><img src="{% static '667462c456f4a8000f668e3e.png' %}" alt=""
+                                    class="img-fluid"></figure>
+                            <p class="footer-section-text">Eventful Moments | Creating Unforgettable Experiences</p>
+                            <ul class="list-unstyled footer-social-icons">
+                                <li class="list-item">
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 d-xl-block d-none"></div>
+                    <div class="col-xl-3 col-lg-4 col-md-2 col-sm-12 d-lg-block d-none">
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-md-block d-none">
+                        <div class="footer-list footer-link contact-list">
+                            <div class="icon-list-box1">
+                                <ul class="list-unstyled contact-us-ul">
+                                    <li class="list-item">
+                                        <i class="fa-sharp fa-solid fa-phone-volume footer-location3"></i>
+                                        <p class="contact-title">Call Us: </p>
+                                        <a href="tel:+91 98984 51593" class="text-decoration-none footer-link-auto">+91
+                                            98984 51593</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <i class="fa fa-envelope footer-location3"></i>
+                                        <p class="contact-title">Email Us:</p>
+                                        <a href="mailto:etckaran@gmail.com"
+                                            class="text-decoration-none footer-link-auto">etckaran@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="{% static 'assets/js/animations.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'assets/js/text-animations.js' %}"></script>
+    <script src="{% static 'assets/js/carousel.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script src="{% static 'assets/js/type.js' %}"></script>
+    <script src="{% static 'assets/js/custom-script.js' %}"></script>
+    <script src="{% static 'assets/js/video-popup.js' %}"></script>
+</body>
+
+</html>
